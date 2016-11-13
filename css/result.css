@@ -412,6 +412,12 @@ template {
   clip: rect(0, 0, 0, 0);
   position: absolute; }
 
+.left {
+  float: left !important; }
+
+.right {
+  float: right !important; }
+
 body {
   margin: 0;
   padding: 0;
@@ -429,6 +435,11 @@ p {
 
 em {
   color: #d70019; }
+
+img {
+  float: left;
+  width: 45%;
+  height: auto; }
 
 header {
   background: #c4c4c4;
@@ -502,6 +513,7 @@ header {
 
 #leftcolumn {
   float: left;
+  height: auto;
   width: 230px;
   margin-left: -100%;
   background: #b8b0ff; }
@@ -547,5 +559,9 @@ footer {
   .inner_margin b {
     font-size: 14px;
     font-size: 1.75rem; }
+  .inner_margin img {
+    float: left;
+    width: 40%;
+    height: auto; }
 
 /*# sourceMappingURL=result.css.map */

@@ -13,6 +13,25 @@ $scorpion: #595959;
 $tundora: #444;
 $mine-shaft: #363636;
 $cod-gray: #111;
+$white: #FFFFFF ;
+$ghost: #FAFAFA ;
+$snow: #F9F9F9 ;
+$vapor: #F6F6F6;
+$white-smoke: #F5F5F5 ;
+$silver: #EFEFEF ;
+$smoke : #EEEEEE ;
+$gainsboro: #DDDDDD ;
+$iron : #CCCCCC ;
+$base : #AAAAAA ;
+$aluminum: #999999 ;
+$jumbo: #888888 ;
+$monsoon: #777777 ;
+$steel: #666666 ;
+$charcoal : #555555 ;
+$tuatara: #444444 ;
+$oil: #333333 ;
+$jet: #222222 ;
+$black: #000000 ;
 
 // mixin for line height
 //fallback for old browsers
@@ -48,6 +67,11 @@ $cod-gray: #111;
   @extend %hidden;
 }
 
+// useful HTML classes
+.left   { float: left !important; }
+.right  { float: right !important; }
+
+
 //media queries
 $mq-840: "(max-width: 840px)";
 $mq-640: "(max-width: 640px)";
@@ -64,7 +88,6 @@ body {
 
 //text styling
 
-
 p {
   color: darken($cod-gray, 15);
   @media #{$mq-840} {
@@ -75,6 +98,12 @@ p {
 
 em {
   color: lighten($bright-red, 7);
+}
+
+img {
+  float: left;
+  width: 45%;
+  height: auto;
 }
 
 //header
@@ -141,6 +170,7 @@ header {
   margin-left: 230px;
   margin-right: 200px;
   @include content-area;
+
 }
 
 #second_contentcolumn {
@@ -159,6 +189,7 @@ header {
 
 #leftcolumn {
   float: left;
+  height: auto;
   width: 230px;
   margin-left: -100%;
   background: lighten($heliotrope, 10);
@@ -210,6 +241,11 @@ footer {
  b {
   @include font-size(14);
   
+}
+img {
+  float: left;
+  width: 40%;
+  height: auto;
 }
 }
 
