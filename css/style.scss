@@ -226,13 +226,6 @@ header {
   @include content-area;
 }
 
-#third_contentcolumn {
-  margin-right: 0;
-  margin-left: 0;
-
-  @include content-area;
-}
-
 #leftcolumn {
   float: left;
   height: auto;
